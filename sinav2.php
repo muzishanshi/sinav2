@@ -4,7 +4,7 @@ Plugin Name: 新浪微博同步插件
 Version: V3.0.1
 Plugin URL:http://www.emlog.net/plugin/310
 Description: 基于新浪微博API(OAuth2.0授权认证)，可以将在emlog内发布的碎语、日志同步到指定的新浪微博账号。针对2017年6月26日微博API更新有所调整。
-Author:二呆(VX/QQ:2293338477)
+Author:二呆
 Author URL: http://www.tongleer.com
 */
 
