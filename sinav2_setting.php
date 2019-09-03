@@ -80,7 +80,7 @@ $("#sinav2").addClass('sidebarsubmenu1');
 				<td><input name="appsecret" type="text" value="<?php echo SINAV2_SKEY;?>" /></td>
 			</tr>
 			<tr>
-				<td>回调地址：</td>
+				<td>回调地址(当前页面地址栏中的url链接)：</td>
 				<td><input name="callback" type="text" value="<?php echo SINAV2_CALLBACK_URL;?>" /></td>
 			</tr>
 		</table>
