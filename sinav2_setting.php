@@ -77,7 +77,7 @@ $("#sinav2").addClass('sidebarsubmenu1');
 			</tr>
 			<tr>
 				<td>App Secret：</td>
-				<td><input name="appsecret" type="text" value="<?php echo SINAV2_SKEY;?>" /></td>
+				<td><input name="appsecret" type="password" value="<?php echo SINAV2_SKEY;?>" /></td>
 			</tr>
 			<tr>
 				<td>回调地址(当前页面地址栏中的url链接)：</td>
