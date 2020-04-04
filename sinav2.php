@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: 新浪微博同步插件
-Version: V3.0.1
+Version: V3.0.2
 Plugin URL:http://www.emlog.net/plugin/310
 Description: 基于新浪微博API(OAuth2.0授权认证)，可以将在emlog内发布的碎语、日志同步到指定的新浪微博账号。针对2017年6月26日微博API更新有所调整。
 Author:二呆
@@ -83,6 +83,13 @@ function sinav2_postTwitter2Sinat($t) {
 	if (!defined('SINAV2_ACCESS_TOKEN')) {
 		return false;
 	}
+	global $img;
+	
+	$sinaimg=false;
+	if(!empty($img)){
+		$sinaimg = EMLOG_ROOT."/content/".$img;
+	}
+	
 	$suffix=' - 来自：' . BLOG_URL;
     //$postData = strip_tags($t);
     //if (SINAV2_TFROM == '4') {
@@ -90,7 +97,7 @@ function sinav2_postTwitter2Sinat($t) {
     //}
 	$postData= preg_replace("/\#/","",$postData);
 	$c = new SaeTClientV2( SINAV2_AKEY , SINAV2_SKEY , SINAV2_ACCESS_TOKEN );
-	$res=$c->share($postData);
+	$res=$c->share($postData,$sinaimg);
 }
 
 if (SINAV2_SYNC == '2' || SINAV2_SYNC == '1') {

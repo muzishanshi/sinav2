@@ -22,7 +22,7 @@ http://www.emlog.net/plugin/310
 第四步：完成。
 
 #### 使用注意：
-此插件使用php5.6编写，如果遇到语法报错，就适当降低php版本即可。
+版本推荐：php5.6
 
 #### 与我联系：
 作者：二呆
@@ -34,6 +34,10 @@ http://www.emlog.net/plugin/310
 Github：https://github.com/muzishanshi/sinav2
 
 #### 更新日志：
+2020-04-04
+
+	新增微语可配图同步微博
+
 2018-06-02
 
 	1、修复发送微博时字数限制；
